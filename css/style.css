@@ -3932,99 +3932,61 @@ input.main-search-input:-ms-input-placeholder {
 
 
 
+.basic-pagination {
+    display: flex;
+    justify-content: center; /* Memusatkan pagination secara horizontal */
+    align-items: center; /* Memastikan elemen berada di tengah vertikal */
+    width: 100%; /* Pastikan container pagination mengambil lebar penuh */
+}
+
 .basic-pagination ul {
-
-	display: block;
-
+    display: flex; /* Ubah dari block ke flex agar elemen sejajar */
+    justify-content: center; /* Memusatkan elemen di dalam ul */
+    align-items: center;
+    gap: 10px; /* Beri jarak antar elemen */
+    padding: 0;
+    list-style: none;
 }
 
 .basic-pagination ul li {
-
-	display: inline-block;
-
-	margin: 0 5px;
-
-}
-
-@media (max-width: 767px) {
-
-	.basic-pagination ul li {
-
-		margin-bottom: 10px;
-
-	}
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .basic-pagination ul li a {
-
-	height: 70px;
-
-	width: 70px;
-
-	background: #ffffff;
-
-	color: #9990b8;
-
-	font-size: 16px;
-
-	font-weight: 500;
-
-	border-radius: 50%;
-
-	line-height: 70px;
-
-	margin: 0px;
-
-	display: inline-block;
-
-	text-align: center;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 70px;
+    background: #ffffff;
+    color: #9990b8;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 50%;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: 0.3s;
 }
 
-.basic-pagination ul li a:hover ,.basic-pagination ul li.active a {
-
-	background: #fe4536;
-
-	color: #ffffff;
-
-	box-shadow: 0px 8px 16px 0px rgba(254, 69, 54, 0.3);
-
+.basic-pagination ul li a:hover,
+.basic-pagination ul li.active a {
+    background: #fe4536;
+    color: #ffffff;
+    box-shadow: 0px 8px 16px 0px rgba(254, 69, 54, 0.3);
 }
 
-.basic-pagination-2 ul li{
+@media (max-width: 767px) {
+    .basic-pagination ul {
+        flex-wrap: wrap; /* Agar pagination tetap rapi di layar kecil */
+    }
 
+    .basic-pagination ul li {
+        margin-bottom: 10px;
+    }
 }
 
-.basic-pagination-2 ul li a {
-
-	background: transparent;
-
-	color: #9990b8;
-
-	border: 2px solid #eaebec;
-
-	height: 60px;
-
-	width: 60px;
-
-	line-height: 56px;
-
-}
-
-.basic-pagination-2 ul li a:hover,.basic-pagination-2 ul li.active a {
-
-	background: #fe4536;
-
-	color: #ffffff;
-
-	border-color: #fe4536;
-
-	box-shadow: 0px 8px 16px 0px rgba(254, 69, 54, 0.3);
-
-
-
-}
 
 
 
@@ -9043,6 +9005,55 @@ ul.cat li a:hover {
   }
 
 }
+
+.recent-products {
+    width: 100%;
+    padding: 10px;
+	margin-top: 100px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.recent-products h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	align-items: center;
+}
+
+.product-container {
+    display: flex;
+    gap: 15px;  /* Jarak antar produk */
+    overflow-x: auto; /* Supaya bisa geser kalau banyak produk */
+    padding-bottom: 10px;
+}
+
+.product {
+    flex: 0 0 auto;
+    width: 150px; /* Lebar masing-masing produk */
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product p {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.product span {
+    font-size: 12px;
+    color: #777;
+}
+
 
 
 
