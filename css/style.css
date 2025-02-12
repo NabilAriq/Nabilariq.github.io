@@ -9007,57 +9007,66 @@ ul.cat li a:hover {
 }
 
 .recent-products {
-    width: 100%;
-    padding: 10px;
-	margin-top: 100px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+	margin: 50px;
 }
 
 .recent-products h3 {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 10px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	text-align: center;
-	align-items: center;
+	margin-bottom: 20px;
+	font-size: 24px;
+	font-weight: bold;
 }
 
 .product-container {
-    display: flex;
-    gap: 15px;  /* Jarak antar produk */
-    overflow-x: auto; /* Supaya bisa geser kalau banyak produk */
-    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px; /* Spasi antar item */
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px; /* Atur lebar maksimal untuk menjaga presisi */
 }
 
 .product {
-    flex: 0 0 auto;
-    width: 150px; /* Lebar masing-masing produk */
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 250px; /* Membatasi ukuran setiap item */
+}
+
+.product:hover {
+	transform: scale(1.05);
 }
 
 .product img {
-    width: 100%;
-    border-radius: 5px;
+	max-width: 100%;
+	border-radius: 5px;
+	margin-bottom: 10px;
 }
 
 .product p {
-    font-size: 14px;
-    font-weight: bold;
-    margin: 5px 0;
+	font-size: 16px;
+	font-weight: 600;
+	margin: 10px 0 5px;
 }
 
 .product span {
-    font-size: 12px;
-    color: #777;
+	font-size: 14px;
+	color: #555;
 }
 
 .filter-container {
 	display: flex;
 	gap: 10px;
 }
+
 .filter-box {
 	padding: 15px 25px;
 	background-color: #ddd;
@@ -9065,6 +9074,7 @@ ul.cat li a:hover {
 	cursor: pointer;
 	transition: background-color 0.3s ease;
 }
+
 .filter-box:hover {
 	background-color: #fe4536;
 	color: rgb(255, 255, 255);
