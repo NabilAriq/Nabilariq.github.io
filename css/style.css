@@ -9065,20 +9065,37 @@ ul.cat li a:hover {
 .filter-container {
 	display: flex;
 	gap: 10px;
-}
-
-.filter-box {
-	padding: 15px 25px;
-	background-color: #ddd;
-	border-radius: 5px;
+	justify-content: center;
+	padding: 10px;
+	background-color: #f7f7f7;
+	border-radius: 10px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filter-btn {
+	padding: 10px 20px;
+	border: 2px solid #ddd;
+	background-color: #ffffff;
+	color: #333;
+	font-size: 16px;
+	font-weight: 500;
+	border-radius: 30px;
 	cursor: pointer;
-	transition: background-color 0.3s ease;
-}
-
-.filter-box:hover {
+	transition: all 0.3s;
+  }
+  
+  .filter-btn:hover {
 	background-color: #fe4536;
-	color: rgb(255, 255, 255);
-}
+	color: #ffffff;
+  }
+  
+  .filter-btn.active {
+	background-color: #fe4536;
+	color: #ffffff;
+	border-color: #fe4536;
+	box-shadow: 0px 8px 16px rgba(254, 69, 54, 0.3);
+  }
+  
 
 
 /*--- end of preloader ---*/
