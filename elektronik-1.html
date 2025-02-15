@@ -366,311 +366,232 @@
                         <!-- tab filter -->
                         <div class="row mb-10">
                             <div class="col-xl-7 col-lg-6 col-md-6">
-                                <div class="shop-tab f-right">
-                                    <ul class="nav text-center" id="myTab" role="tablist">
-                                        <li class="nav-item">
-                                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
-                                                aria-selected="true"><i class="fas fa-list-ul"></i> </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
-                                                aria-selected="false"><i class="fas fa-th-large"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="filter-container">
-                                        <div class="filter-box">Filter 1</div>
-                                        <div class="filter-box">Filter 2</div>
-                                        <div class="filter-box">Filter 3</div>
-                                        <div class="filter-box">Filter 4</div>
+                                <div class="filter-container" id="myTab" role="tablist">
+                                    <button class="filter-btn active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">
+                                      All
+                                    </button>
+                                    <button class="filter-btn" id="electronics-tab" data-toggle="tab" href="#electronics" role="tab" aria-controls="electronics" aria-selected="false">
+                                      Electronics
+                                    </button>
+                                    <button class="filter-btn" id="furniture-tab" data-toggle="tab" href="#furniture" role="tab" aria-controls="furniture" aria-selected="false">
+                                      Furniture
+                                    </button>
                                 </div>
                             </div>
                         </div>
                         <!-- tab content -->
-                        <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6">
-                                        <div class="product-wrapper mb-50">
-                                            <div class="product-img mb-25">
-                                                <a href="product-details.html">
-                                                    <img src="img/product/Samsung Galaxy S21.jpg" alt="">
-                                                    <img class="secondary-img" src="img/product/Samsung Galaxy S21.jpg" alt="">
+                        <div class="tab-content" id="myTabContent"><div class="tab-content">
+                            <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                              <p> <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="product-wrapper mb-50">
+                                        <div class="product-img mb-25">
+                                            <a href="product-details.html">
+                                                <img src="img/product/Samsung Galaxy S21.jpg" alt="">
+                                                <img class="secondary-img" src="img/product/Samsung Galaxy S21.jpg" alt="">
+                                            </a>
+                                            <div class="product-action text-center">
+                                                <a href="#" title="Shoppingb Cart">
+                                                    <i class="flaticon-shopping-cart"></i>
                                                 </a>
-                                                <div class="product-action text-center">
-                                                    <a href="#" title="Shoppingb Cart">
-                                                        <i class="flaticon-shopping-cart"></i>
-                                                    </a>
-                                                    <a href="#" title="Quick View">
-                                                        <i class="flaticon-eye"></i>
-                                                    </a>
-                                                    <a href="#" data-toggle="tooltip" data-placement="right" title="Compare">
-                                                        <i class="flaticon-compare"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="sale-tag">
-                                                    <span class="new">new</span>
-                                                    <span class="sale">sale</span>
+                                                <a href="#" title="Quick View">
+                                                    <i class="flaticon-eye"></i>
+                                                </a>
+                                                <a href="#" data-toggle="tooltip" data-placement="right" title="Compare">
+                                                    <i class="flaticon-compare"></i>
+                                                </a>
+                                            </div>
+                                            <div class="sale-tag">
+                                                <span class="new">new</span>
+                                                <span class="sale">sale</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <div class="pro-cat mb-10">
+                                                <a href="elektronik-1.html">decor, </a>
+                                                <a href="elektronik-1.html">furniture</a>
+                                            </div>
+                                            <h4>
+                                                <a href="product-details.html">Minimal Troma Furniture</a>
+                                            </h4>
+                                            <div class="product-meta">
+                                                <div class="pro-price">
+                                                    <span>$119.00 USD</span>
+                                                    <span class="old-price">$230.00 USD</span>
                                                 </div>
                                             </div>
-                                            <div class="product-content">
-                                                <div class="pro-cat mb-10">
-                                                    <a href="elektronik-1.html">decor, </a>
-                                                    <a href="elektronik-1.html">furniture</a>
-                                                </div>
-                                                <h4>
-                                                    <a href="product-details.html">Minimal Troma Furniture</a>
-                                                </h4>
-                                                <div class="product-meta">
-                                                    <div class="pro-price">
-                                                        <span>$119.00 USD</span>
-                                                        <span class="old-price">$230.00 USD</span>
-                                                    </div>
-                                                </div>
-                                                <div class="product-wishlist">
-                                                    <a href="#"><i class="far fa-heart" title="Wishlist"></i></a>
-                                                </div>
+                                            <div class="product-wishlist">
+                                                <a href="#"><i class="far fa-heart" title="Wishlist"></i></a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6">
-                                        <div class="product-wrapper mb-50">
-                                            <div class="product-img mb-25">
-                                                <a href="product-details.html">
-                                                    <img src="img/product/Samsung Galaxy S21.jpg" alt="">
-                                                    <img class="secondary-img" src="img/product/Samsung Galaxy S21.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="product-wrapper mb-50">
+                                        <div class="product-img mb-25">
+                                            <a href="product-details.html">
+                                                <img src="img/product/Samsung Galaxy S21.jpg" alt="">
+                                                <img class="secondary-img" src="img/product/Samsung Galaxy S21.jpg" alt="">
+                                            </a>
+                                            <div class="product-action text-center">
+                                                <a href="#" title="Shoppingb Cart">
+                                                    <i class="flaticon-shopping-cart"></i>
                                                 </a>
-                                                <div class="product-action text-center">
-                                                    <a href="#" title="Shoppingb Cart">
-                                                        <i class="flaticon-shopping-cart"></i>
-                                                    </a>
-                                                    <a href="#" title="Quick View">
-                                                        <i class="flaticon-eye"></i>
-                                                    </a>
-                                                    <a href="#" data-toggle="tooltip" data-placement="right" title="Compare">
-                                                        <i class="flaticon-compare"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="sale-tag">
-                                                    <span class="new">new</span>
-                                                    <span class="sale">sale</span>
+                                                <a href="#" title="Quick View">
+                                                    <i class="flaticon-eye"></i>
+                                                </a>
+                                                <a href="#" data-toggle="tooltip" data-placement="right" title="Compare">
+                                                    <i class="flaticon-compare"></i>
+                                                </a>
+                                            </div>
+                                            <div class="sale-tag">
+                                                <span class="new">new</span>
+                                                <span class="sale">sale</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <div class="pro-cat mb-10">
+                                                <a href="elektronik-1.html">decor, </a>
+                                                <a href="elektronik-1.html">furniture</a>
+                                            </div>
+                                            <h4>
+                                                <a href="product-details.html">Minimal Troma Furniture</a>
+                                            </h4>
+                                            <div class="product-meta">
+                                                <div class="pro-price">
+                                                    <span>$119.00 USD</span>
+                                                    <span class="old-price">$230.00 USD</span>
                                                 </div>
                                             </div>
-                                            <div class="product-content">
-                                                <div class="pro-cat mb-10">
-                                                    <a href="elektronik-1.html">decor, </a>
-                                                    <a href="elektronik-1.html">furniture</a>
-                                                </div>
-                                                <h4>
-                                                    <a href="product-details.html">Minimal Troma Furniture</a>
-                                                </h4>
-                                                <div class="product-meta">
-                                                    <div class="pro-price">
-                                                        <span>$119.00 USD</span>
-                                                        <span class="old-price">$230.00 USD</span>
-                                                    </div>
-                                                </div>
-                                                <div class="product-wishlist">
-                                                    <a href="#"><i class="far fa-heart" title="Wishlist"></i></a>
-                                                </div>
+                                            <div class="product-wishlist">
+                                                <a href="#"><i class="far fa-heart" title="Wishlist"></i></a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6">
-                                        <div class="product-wrapper mb-50">
-                                            <div class="product-img mb-25">
-                                                <a href="product-details.html">
-                                                    <img src="img/product/pro1.jpg" alt="">
-                                                    <img class="secondary-img" src="img/product/pro2.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="product-wrapper mb-50">
+                                        <div class="product-img mb-25">
+                                            <a href="product-details.html">
+                                                <img src="img/product/pro1.jpg" alt="">
+                                                <img class="secondary-img" src="img/product/pro2.jpg" alt="">
+                                            </a>
+                                            <div class="product-action text-center">
+                                                <a href="#" title="Shoppingb Cart">
+                                                    <i class="flaticon-shopping-cart"></i>
                                                 </a>
-                                                <div class="product-action text-center">
-                                                    <a href="#" title="Shoppingb Cart">
-                                                        <i class="flaticon-shopping-cart"></i>
-                                                    </a>
-                                                    <a href="#" title="Quick View">
-                                                        <i class="flaticon-eye"></i>
-                                                    </a>
-                                                    <a href="#" data-toggle="tooltip" data-placement="right" title="Compare">
-                                                        <i class="flaticon-compare"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="sale-tag">
-                                                    <span class="new">new</span>
-                                                    <span class="sale">sale</span>
+                                                <a href="#" title="Quick View">
+                                                    <i class="flaticon-eye"></i>
+                                                </a>
+                                                <a href="#" data-toggle="tooltip" data-placement="right" title="Compare">
+                                                    <i class="flaticon-compare"></i>
+                                                </a>
+                                            </div>
+                                            <div class="sale-tag">
+                                                <span class="new">new</span>
+                                                <span class="sale">sale</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <div class="pro-cat mb-10">
+                                                <a href="elektronik-1.html">decor, </a>
+                                                <a href="elektronik-1.html">furniture</a>
+                                            </div>
+                                            <h4>
+                                                <a href="product-details.html">Minimal Troma Furniture</a>
+                                            </h4>
+                                            <div class="product-meta">
+                                                <div class="pro-price">
+                                                    <span>$119.00 USD</span>
+                                                    <span class="old-price">$230.00 USD</span>
                                                 </div>
                                             </div>
-                                            <div class="product-content">
-                                                <div class="pro-cat mb-10">
-                                                    <a href="elektronik-1.html">decor, </a>
-                                                    <a href="elektronik-1.html">furniture</a>
-                                                </div>
-                                                <h4>
-                                                    <a href="product-details.html">Minimal Troma Furniture</a>
-                                                </h4>
-                                                <div class="product-meta">
-                                                    <div class="pro-price">
-                                                        <span>$119.00 USD</span>
-                                                        <span class="old-price">$230.00 USD</span>
-                                                    </div>
-                                                </div>
-                                                <div class="product-wishlist">
-                                                    <a href="#"><i class="far fa-heart" title="Wishlist"></i></a>
-                                                </div>
+                                            <div class="product-wishlist">
+                                                <a href="#"><i class="far fa-heart" title="Wishlist"></i></a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6">
-                                        <div class="product-wrapper mb-50">
-                                            <div class="product-img mb-25">
-                                                <a href="product-details.html">
-                                                    <img src="img/product/pro29.jpg" alt="">
-                                                    <img class="secondary-img" src="img/product/pro28.jpg" alt="">
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="product-wrapper mb-50">
+                                        <div class="product-img mb-25">
+                                            <a href="product-details.html">
+                                                <img src="img/product/pro29.jpg" alt="">
+                                                <img class="secondary-img" src="img/product/pro28.jpg" alt="">
+                                            </a>
+                                            <div class="product-action text-center">
+                                                <a href="#" title="Shoppingb Cart">
+                                                    <i class="flaticon-shopping-cart"></i>
                                                 </a>
-                                                <div class="product-action text-center">
-                                                    <a href="#" title="Shoppingb Cart">
-                                                        <i class="flaticon-shopping-cart"></i>
-                                                    </a>
-                                                    <a href="#" title="Quick View">
-                                                        <i class="flaticon-eye"></i>
-                                                    </a>
-                                                    <a href="#" data-toggle="tooltip" data-placement="right" title="Compare">
-                                                        <i class="flaticon-compare"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="sale-tag">
-                                                    <span class="new">new</span>
-                                                    <span class="sale">sale</span>
+                                                <a href="#" title="Quick View">
+                                                    <i class="flaticon-eye"></i>
+                                                </a>
+                                                <a href="#" data-toggle="tooltip" data-placement="right" title="Compare">
+                                                    <i class="flaticon-compare"></i>
+                                                </a>
+                                            </div>
+                                            <div class="sale-tag">
+                                                <span class="new">new</span>
+                                                <span class="sale">sale</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <div class="pro-cat mb-10">
+                                                <a href="elektronik-1.html">decor, </a>
+                                                <a href="elektronik-1.html">furniture</a>
+                                            </div>
+                                            <h4>
+                                                <a href="product-details.html">Minimal Troma Furniture</a>
+                                            </h4>
+                                            <div class="product-meta">
+                                                <div class="pro-price">
+                                                    <span>$119.00 USD</span>
+                                                    <span class="old-price">$230.00 USD</span>
                                                 </div>
                                             </div>
-                                            <div class="product-content">
-                                                <div class="pro-cat mb-10">
-                                                    <a href="elektronik-1.html">decor, </a>
-                                                    <a href="elektronik-1.html">furniture</a>
-                                                </div>
-                                                <h4>
-                                                    <a href="product-details.html">Minimal Troma Furniture</a>
-                                                </h4>
-                                                <div class="product-meta">
-                                                    <div class="pro-price">
-                                                        <span>$119.00 USD</span>
-                                                        <span class="old-price">$230.00 USD</span>
-                                                    </div>
-                                                </div>
-                                                <div class="product-wishlist">
-                                                    <a href="#"><i class="far fa-heart" title="Wishlist"></i></a>
-                                                </div>
+                                            <div class="product-wishlist">
+                                                <a href="#"><i class="far fa-heart" title="Wishlist"></i></a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="basic-pagination basic-pagination-2 text-center mt-20">
-                                        <!-- Logika Page number -->   
-                                          <ul>
-                                            <li class="active"><a href="elektronik-1.html">01</a></li>
-                                            <li><a href="elektronik-2.html">02</a></li>
-                                            <li><a href="elektronik-3.html">03</a></li>
-                                        </ul>
+                                </div>
+                                <div class="basic-pagination basic-pagination-2 text-center mt-20">
+                                    <!-- Logika Page number -->   
+                                      <ul>
+                                        <li class="active"><a href="elektronik-1.html">01</a></li>
+                                        <li><a href="elektronik-2.html">02</a></li>
+                                        <li><a href="elektronik-3.html">03</a></li>
+                                    </ul>
 
-                                    </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                <div class="row">
-                                    <div class="col-xl-5">
-                                        <div class="product-wrapper mb-30">
-                                            <div class="product-img">
-                                                <a href="product-details.html">
-                                                    <img src="img/product/Samsung Galaxy S21.jpg" alt="">
-                                                    <img class="secondary-img" src="img/product/Samsung Galaxy S21.jpg" alt="">
-                                                </a>
-                                                <div class="sale-tag">
-                                                    <span class="new">new</span>
-                                                    <span class="sale">sale</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-7">
-                                        <div class="product-content pro-list-content pr-0 mb-50">
-                                            <div class="pro-cat mb-10">
-                                                <a href="elektronik-1.html">decor, </a>
-                                                <a href="elektronik-1.html">furniture</a>
-                                            </div>
-                                            <h4>
-                                                <a href="product-details.html">Minimal Troma Furniture</a>
-                                            </h4>
-                                            <div class="product-meta mb-10">
-                                                <div class="pro-price">
-                                                    <span>$119.00 USD</span>
-                                                    <span class="old-price">$230.00 USD</span>
-                                                </div>
-                                            </div>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                            <div class="product-action">
-                                                <a href="#" title="Shoppingb Cart">
-                                                    <i class="flaticon-shopping-cart"></i>
-                                                </a>
-                                                <a href="#" title="Quick View">
-                                                    <i class="flaticon-eye"></i>
-                                                </a>
-                                                <a href="#" title="Wishlist"><i class="flaticon-like"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="row">
-                                    <div class="col-xl-5">
-                                        <div class="product-wrapper mb-30">
-                                            <div class="product-img">
-                                                <a href="product-details.html">
-                                                    <img src="img/product/Samsung Galaxy S21.jpg" alt="">
-                                                    <img class="secondary-img" src="img/product/Samsung Galaxy S21.jpg" alt="">
-                                                </a>
-                                                <div class="sale-tag">
-                                                    <span class="new">new</span>
-                                                    <span class="sale">sale</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-7">
-                                        <div class="product-content pro-list-content pr-0 mb-50">
-                                            <div class="pro-cat mb-10">
-                                                <a href="elektronik-1.html">decor, </a>
-                                                <a href="elektronik-1.html">furniture</a>
-                                            </div>
-                                            <h4>
-                                                <a href="product-details.html">Minimal Troma Furniture</a>
-                                            </h4>
-                                            <div class="product-meta mb-10">
-                                                <div class="pro-price">
-                                                    <span>$119.00 USD</span>
-                                                    <span class="old-price">$230.00 USD</span>
-                                                </div>
-                                            </div>
-                                            <p>Ini adalah produk terbaru dari SAMSUNG</p>
-                                            <div class="product-action">
-                                                <a href="#" title="Shoppingb Cart">
-                                                    <i class="flaticon-shopping-cart"></i>
-                                                </a>
-                                                <a href="#" title="Quick View">
-                                                    <i class="flaticon-eye"></i>
-                                                </a>
-                                                <a href="#" title="Wishlist"><i class="flaticon-like"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                        <div class="basic-pagination basic-pagination-2 text-center mt-20">
-                            <!-- Logika Page number -->
-                            <!-- Logika Page number --> 
-<ul>
-                                            <li class="active"><a href="elektronik-1.html">01</a></li>
-                                            <li><a href="elektronik-2.html">02</a></li>
-                                            <li><a href="elektronik-3.html">03</a></li>
-                                        </ul>
+                        </div>
+                    </p>
+                            </div>
+                            <div class="tab-pane fade" id="electronics" role="tabpanel" aria-labelledby="electronics-tab">
+                                <div class="basic-pagination basic-pagination-2 text-center mt-20">
+                                    <!-- Logika Page number -->   
+                                      <ul>
+                                        <li class="active"><a href="elektronik-1.html">01</a></li>
+                                        <li><a href="elektronik-2.html">02</a></li>
+                                        <li><a href="elektronik-3.html">03</a></li>
+                                    </ul>
 
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="furniture" role="tabpanel" aria-labelledby="furniture-tab">
+                                <div class="basic-pagination basic-pagination-2 text-center mt-20">
+                                    <!-- Logika Page number -->   
+                                      <ul>
+                                        <li class="active"><a href="elektronik-1.html">01</a></li>
+                                        <li><a href="elektronik-2.html">02</a></li>
+                                        <li><a href="elektronik-3.html">03</a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                          </div>
+                            
                         </div>
                     </div>
                     <div class="recent-products">
