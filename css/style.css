@@ -9062,27 +9062,19 @@ ul.cat li a:hover {
 	color: #555;
 }
 
-.filter-container {
-	display: flex;
-	gap: 10px;
-	justify-content: center;
-	padding: 10px;
-	background-color: #f7f7f7;
-	border-radius: 10px;
-	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
+ @media (max-width: 768px) {
+	.filter-container {
+	  flex-wrap: wrap;
+	  justify-content: center;
+	  padding: 5px;
+	}
   
-  .filter-btn {
-	padding: 10px 20px;
-	border: 2px solid #ddd;
-	background-color: #ffffff;
-	color: #333;
-	font-size: 16px;
-	font-weight: 500;
-	border-radius: 30px;
-	cursor: pointer;
-	transition: all 0.3s;
-  }
+	.filter-btn {
+	  padding: 8px 16px;
+	  font-size: 14px;
+	  margin: 5px;
+	}
+  }  
   
   .filter-btn:hover {
 	background-color: #fe4536;
@@ -9095,7 +9087,6 @@ ul.cat li a:hover {
 	border-color: #fe4536;
 	box-shadow: 0px 8px 16px rgba(254, 69, 54, 0.3);
   }
-  
 
 
 /*--- end of preloader ---*/
