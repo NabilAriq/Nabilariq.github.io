@@ -9018,6 +9018,7 @@ ul.cat li a:hover {
 	margin-bottom: 20px;
 	font-size: 24px;
 	font-weight: bold;
+	padding-bottom: 25px;
 }
 
 .product-container {
@@ -9062,19 +9063,28 @@ ul.cat li a:hover {
 	color: #555;
 }
 
- @media (max-width: 768px) {
-	.filter-container {
-	  flex-wrap: wrap;
-	  justify-content: center;
-	  padding: 5px;
-	}
+.filter-container {
+	display: inline-flex;
+	gap: 10px;
+	padding: 10px;
+	background-color: #f7f7f7;
+	border-radius: 50px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	flex-direction: row;
+	align-items: center;
+  }
   
-	.filter-btn {
-	  padding: 8px 16px;
-	  font-size: 14px;
-	  margin: 5px;
-	}
-  }  
+  .filter-btn {
+	padding: 10px 20px;
+	border: 2px solid #ddd;
+	background-color: #ffffff;
+	color: #333;
+	font-size: 16px;
+	font-weight: 500;
+	border-radius: 30px;
+	cursor: pointer;
+	transition: all 0.3s;
+  }
   
   .filter-btn:hover {
 	background-color: #fe4536;
@@ -9087,6 +9097,24 @@ ul.cat li a:hover {
 	border-color: #fe4536;
 	box-shadow: 0px 8px 16px rgba(254, 69, 54, 0.3);
   }
-
+  
+  /* Media Query untuk tampilan mobile */
+  @media (max-width: 768px) {
+	.filter-container {
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: center;
+	  gap: 8px;
+	  padding: 8px;
+	  border-radius: 20px;
+	}
+  
+	.filter-btn {
+	  padding: 8px 16px;
+	  font-size: 14px;
+	  border-radius: 20px;
+	}
+  }
+  
 
 /*--- end of preloader ---*/
